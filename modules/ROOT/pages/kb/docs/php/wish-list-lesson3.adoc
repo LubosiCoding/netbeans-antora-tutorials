@@ -394,7 +394,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
      * If the data was validated successfully, add it as a new entry in the "wishers" database.
      * After adding the new entry, close the connection and redirect the application to editWishList.php.
      */
-    *if (!$userIsEmpty &amp;&amp; $userNameIsUnique &amp;&amp; !$passwordIsEmpty &amp;&amp; !$password2IsEmpty &amp;&amp; $passwordIsValid) {
+    *if (!$userIsEmpty && $userNameIsUnique && !$passwordIsEmpty && !$password2IsEmpty && $passwordIsValid) {
 
         $query = "INSERT INTO wishers (name, password) VALUES (:user_bv, :pwd_bv)";
         $stid = oci_parse($con, $query);
