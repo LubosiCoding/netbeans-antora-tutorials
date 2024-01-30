@@ -463,7 +463,7 @@ Please confirm your password: <input type="password" name="password2"/><br/>
      echo ("Confirm your password, please");
      echo ("<br/>");    
  }                
- if (!$password2IsEmpty &amp;&amp; !$passwordIsValid) {
+ if (!$password2IsEmpty && !$passwordIsValid) {
      echo  ("The passwords do not match!");
      echo ("<br/>");  
  }                 
